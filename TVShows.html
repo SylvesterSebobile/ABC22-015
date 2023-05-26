@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Warner Bros</title>
+	<style>
+		body {
+			background: linear-gradient(180deg, #4042b1, #000);
+			color: #fff;
+			font-family: verdana;
+			margin: 0;
+			padding: 0;
+		}
+		h1 {
+			color: #fff;
+			font-size: 28px;
+			font-weight: bold;
+			margin: 50px;
+		}
+		nav {
+			list-style-type: none;
+			margin: 0;
+			overflow: auto;
+			background-color: #222;
+			display: flex; /* Add this line to make the navigation items horizontally aligned */
+			justify-content: flex-end; /* Add this line to align the items to the right */
+		}
+		nav a {
+			display: block;
+			color: #fff;
+			text-align: center;
+			padding: 10px;
+			text-decoration: none;
+			margin-right: 10px; /* Add this line to create a gap between navigation items */
+		}
+		nav a:hover {
+			background-color: #63c0e8;
+			opacity: 0.8;
+		}
+		.image-container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			margin-top: 30px;
+		}
+		figure {
+			margin: 20px;
+			padding: 10px;
+			text-align: center;
+			position: relative;
+			overflow: hidden;
+			width: 200px; /* Adjust the width of the figure to your preference */
+		}
+		img {
+			max-width: 100%; /* Change this line to adjust the image size */
+			height: auto;
+			transition: opacity 0.3s, transform 0.3s;
+		}
+		figcaption {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			padding: 10px;
+			background-color: rgba(0, 0, 0, 0.7);
+			color: #fff;
+			font-size: 16px;
+			opacity: 0;
+			transition: opacity 0.3s;
+		}
+		.play-button {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			opacity: 0;
+			transition: opacity 0.3s;
+		}
+		figure:hover img {
+			opacity: 0.5;
+			transform: scale(1.05);
+		}
+		figure:hover figcaption {
+			opacity: 1;
+		}
+		figure:hover .play-button {
+			opacity: 1;
+		}	
+		footer {
+			background-color: #0000;
+			padding: 20px;
+			text-align: center;
+			color: #fff;
+			margin-top: 50px;
+		}
+		.footer-links {
+			margin-top: 10px;
+			display: flex;
+			justify-content: center;
+		}
+		.footer-links a {
+			color: #fff;
+			text-decoration: none;
+			transition: opacity 0.3s;
+			margin: 10px;
+			font-size: 16px;
+		}
+		.footer-links a:hover {
+			opacity: 0.5;
+		}
+
+		.footer-social {
+			margin-top: 20px;
+			display: flex;
+			justify-content: center;
+		}
+		.social-icon {
+			width: 30px;
+			height: 30px;
+			transition: transform 0.3s;
+			margin: 5px;
+		}
+		.social-icon:hover {
+			transform: scale(1.2);
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="Movies.html">Movies</a>
+			<a href="TVShows.html">Tv shows</a>
+			<a href="kids.html">Kids</a>
+			<a href="Games.html">Games</a>
+			<a href="aboutus.html">About Us</a>
+		</nav>
+	</header>
+	<section>
+		<h1>Blockbusters</h1>
+	</section>
+	<div class="image-container">
+		<figure>
+			<a href="https://youtu.be/L2idzg4dBWU">
+				<img src="images/see.jpeg" height="385px" width="260px">
+				<figcaption>See</figcaption>
+				<div class="play-button">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" width="64px" height="64px">
+						<path d="M0 0h24v24H0z" fill="none" />
+						<path d="M8 5v14l11-7z" />
+					</svg>
+				</div>
+			</a>
+		</figure>
+		<figure>
+			<a href="https://youtu.be/IAdCsNtEuBU">
+				<img src="images/ghosted.jpeg" height="385px" width="260px">
+				<figcaption>Ghosted</figcaption>
+				<div class="play-button">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" width="64px" height="64px">
+						<path d="M0 0h24v24H0z" fill="none" />
+						<path d="M8 5v14l11-7z" />
+					</svg>
+				</div>
+			</a>
+		</figure>
+		<figure>
+			<a href="https://youtu.be/O0JG6V-12ac">
+				<img src="images/citadel.jpeg" height="385px" width="260px">
+				<figcaption>Citadel</figcaption>
+				<div class="play-button">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" width="64px" height="64px">
+						<path d="M0 0h24v24H0z" fill="none" />
+						<path d="M8 5v14l11-7z" />
+					</svg>
+				</div>
+			</a>
+		</figure>
+		<figure>
+			<a href="https://youtu.be/M1bhOaLV4FU">
+				<img src="images/theboys.jpeg" height="385px" width="260px">
+				<figcaption>The Boys</figcaption>
+				<div class="play-button">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" width="64px" height="64px">
+						<path d="M0 0h24v24H0z" fill="none" />
+						<path d="M8 5v14l11-7z" />
+					</svg>
+				</div>
+			</a>
+		</figure>
+		<figure>
+			<a href="https://youtu.be/mUe79BSig_4">
+				<img src="images/gotham.jpeg" height="385px" width="260px">
+				<figcaption>Gotham</figcaption>
+				<div class="play-button">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" width="64px" height="64px">
+						<path d="M0 0h24v24H0z" fill="none" />
+						<path d="M8 5v14l11-7z" />
+					</svg>
+				</div>
+			</a>
+		</figure>
+	</div>
+	<section>
+		<h1>Latest Shows</h1>
+	</section>
+	<div class="image-container">
+		<figure>
+			<a href="https://youtu.be/Ruyl8_PT_y8">
+				<img src="images/peakyblinders.jpeg" height="385px" width="260px">
+				<figcaption>Peaky Blinders</figcaption>
+				<div class="play-button">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" width="64px" height="64px">
+						<path d="M0 0h24v24H0z" fill="none" />
+						<path d="M8 5v14l11-7z" />
+					</svg>
+				</div>
+			</a>
+		</figure>
+		<figure>
+			<a href="https://youtu.be/smTK_AeAPHs">
+				<img src="images/evildeadrise.jpeg" height="385px" width="260px">
+				<figcaption>Evil Dead Rise</figcaption>
+				<div class="play-button">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" width="64px" height="64px">
+						<path d="M0 0h24v24H0z" fill="none" />
+						<path d="M8 5v14l11-7z" />
+					</svg>
+				</div>
+			</a>
+		</figure>
+		<figure>
+			<a href="https://youtu.be/vqu4z34wENw">
+				<img src="images/pathaan.jpg" height="385px" width="260px">
+				<figcaption>Pathaan</figcaption>
+				<div class="play-button">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" width="64px" height="64px">
+						<path d="M0 0h24v24H0z" fill="none" />
+						<path d="M8 5v14l11-7z" />
+					</svg>
+				</div>
+			</a>
+		</figure>
+		<figure>
+			<a href="https://youtu.be/nA7-qKCg3B8">
+				<img src="images/aquaman2.jpg" height="385px" width="260px">
+				<figcaption>Aquaman</figcaption>
+				<div class="play-button">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" width="64px" height="64px">
+						<path d="M0 0h24v24H0z" fill="none" />
+						<path d="M8 5v14l11-7z" />
+					</svg>
+				</div>
+			</a>
+		</figure>
+		<figure>
+			<a href="https://youtu.be/FUK2kdPsBws">
+				<img src="images/fast.jpeg" height="385px" width="260px">
+				<figcaption>Fast and Furious 9</figcaption>
+				<div class="play-button">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" width="64px" height="64px">
+						<path d="M0 0h24v24H0z" fill="none" />
+						<path d="M8 5v14l11-7z" />
+					</svg>
+				</div>
+			</a>
+		</figure>
+	</div>
+		<footer>
+		<div class="footer-links">
+			<a href="index.html">Home</a>
+			<a href="movies.html">Movies</a>
+			<a href="tvshows.html">TV Shows</a>
+			<a href="kids.html">Kids</a>
+			<a href="games.html">Games</a>
+			<a href="aboutus.html">About Us</a>
+		</div>
+		<div class="footer-social">
+			<a href="#"><img class="social-icon" src="images/twitter.png" alt="Twitter"></a>
+			<a href="#"><img class="social-icon" src="images/instagram2.webp" alt="Instagram"></a>
+			<a href="#"><img class="social-icon" src="images/youtube1.png" alt="YouTube"></a>
+		</div>
+	</footer>
+</body>
+</html>

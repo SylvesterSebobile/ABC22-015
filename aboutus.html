@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Warner Bros</title>
+	<style>
+		body {
+			background: linear-gradient(180deg, #4042b1, #000);
+			color: #fff;
+			font-family: verdana;
+			margin: 0;
+			padding: 0;
+		}
+		h1 {
+			color: #fff;
+			font-size: 28px;
+			font-weight: bold;
+			margin: 50px;
+		}
+		p {
+			color: #fff;
+			font-size: 20px;
+			margin: 50px;
+		}
+		nav {
+			list-style-type: none;
+			margin: 0;
+			overflow: auto;
+			background-color: #222;
+			display: flex;
+			justify-content: flex-end;
+		}
+		nav a {
+			display: block;
+			color: #fff;
+			text-align: center;
+			padding: 10px;
+			text-decoration: none;
+			margin-right: 10px;
+		}
+		nav a:hover {
+			background-color: #63c0e8;
+			opacity: 0.8;
+		}
+		.image-container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			margin-top: 30px;
+		}
+		figure {
+			margin: 20px;
+			padding: 10px;
+			text-align: center;
+			position: relative;
+			overflow: hidden;
+			width: 200px;
+		}
+		img {
+			max-width: 100%;
+			height: auto;
+			transition: opacity 0.3s, transform 0.3s;
+		}
+		figcaption {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			padding: 10px;
+			background-color: rgba(0, 0, 0, 0.7);
+			color: #fff;
+			font-size: 16px;
+			opacity: 0;
+			transition: opacity 0.3s;
+		}
+		.play-button {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			opacity: 0;
+			transition: opacity 0.3s;
+		}
+		figure:hover img {
+			opacity: 0.5;
+			transform: scale(1.05);
+		}
+		figure:hover figcaption {
+			opacity: 1;
+		}
+		figure:hover .play-button {
+			opacity: 1;
+		}
+		footer {
+			background-color: #0000;
+			padding: 20px;
+			text-align: center;
+			color: #fff;
+			margin-top: 50px;
+		}
+
+		.footer-links {
+			margin-top: 10px;
+			display: flex;
+			justify-content: center;
+		}
+
+		.footer-links a {
+			color: #fff;
+			text-decoration: none;
+			transition: opacity 0.3s;
+			margin: 10px;
+			font-size: 16px;
+		}
+
+		.footer-links a:hover {
+			opacity: 0.5;
+		}
+
+		.footer-social {
+			margin-top: 20px;
+			display: flex;
+			justify-content: center;
+		}
+
+		.social-icon {
+			width: 30px;
+			height: 30px;
+			transition: transform 0.3s;
+			margin: 5px;
+		}
+
+		.social-icon:hover {
+			transform: scale(1.2);
+		}
+
+		.about-section {
+			padding: 50px;
+			text-align: center;
+		}
+
+		.about-heading {
+			font-size: 28px;
+			font-weight: bold;
+			margin-bottom: 20px;
+		}
+
+		.about-description {
+			font-size: 20px;
+			line-height: 1.5;
+		}
+
+	</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="movies.html">Movies</a>
+			<a href="tvshows.html">TV Shows</a>
+			<a href="kids.html">Kids</a>
+			<a href="games.html">Games</a>
+			<a href="aboutus.html">About Us</a>
+		</nav>
+	</header>
+	<section class="about-section">
+		<h1 class="about-heading">How to Contact Us</h1>
+		<p class="about-description">
+			If you want to contact us or provide feedback, please reach out to us via email at <a href="mailto:Moviesshows@gmail.com">Moviesshows@gmail.com</a>. If you prefer to speak with us directly, you can call us at +1 (267) 71234567. Our dedicated customer service team will be happy to assist you and answer any questions you may have. Thank you for using our site.
+		</p>
+	</section>
+	<section class="about-section">
+		<h1 class="about-heading">For More Information</h1>
+		<p class="about-description">
+			Over the years, we have had the privilege of collaborating with numerous esteemed companies. Many of these companies have not only appreciated our work but also recommended us to others. We take pride in the quality of our services and the relationships we have built. Here are just a few of the companies we have had the pleasure to work with:
+		</p>
+	</section>
+		<div class="image-container">
+		<figure>
+			<a href="">
+				<img src="images/warnerbros.png" height="385px" width="260px">
+				<figcaption>WarnerBros</figcaption>
+				<div class="play-button">
+				</div>
+			</a>
+		</figure>
+		<figure>
+			<a href="">
+				<img src="images/showmax.png" height="385px" width="260px">
+				<figcaption>ShowMax</figcaption>
+				<div class="play-button">
+				</div>
+			</a>
+		</figure>
+		<figure>
+			<a href="">
+				<img src="images/netflix.png" height="385px" width="260px">
+				<figcaption>NetFlix</figcaption>
+				<div class="play-button">
+				</div>
+			</a>
+		</figure>
+		<figure>
+			<a href="">
+				<img src="images/dc.png" height="385px" width="260px">
+				<figcaption>DC Universal</figcaption>
+				<div class="play-button">
+				</div>
+			</a>
+		</figure>
+		</div>
+	<footer>
+		<div class="footer-links">
+			<a href="index.html">Home</a>
+			<a href="Movies.html">Movies</a>
+			<a href="TVShows.html">TV Shows</a>
+			<a href="kids.html">Kids</a>
+			<a href="games.html">Games</a>
+			<a href="aboutus.html">About Us</a>
+		</div>
+		<div class="footer-social">
+			<a href="#"><img class="social-icon" src="images/twitter.png" alt="Twitter"></a>
+			<a href="#"><img class="social-icon" src="images/instagram2.webp" alt="Instagram"></a>
+			<a href="#"><img class="social-icon" src="images/youtube1.png" alt="YouTube"></a>
+		</div>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Warner Bros</title>
+	<style>
+		body {
+			background: linear-gradient(180deg, #4042b1, #000);
+			color: #fff;
+			font-family: verdana;
+			margin: 0;
+			padding: 0;
+		}
+		h1 {
+			color: #fff;
+			font-size: 28px;
+			font-weight: bold;
+			margin: 50px;
+		}
+		h2 {
+			color: #fff;
+			font-size: 28px;
+			font-weight: bold;
+			margin: 50px;
+			}
+		nav {
+			list-style-type: none;
+			margin: 0;
+			overflow: auto;
+			background-color: #222;
+			display: flex; /* Add this line to make the navigation items horizontally aligned */
+			justify-content: flex-end; /* Add this line to align the items to the right */
+		}
+		nav a {
+			display: block;
+			color: #fff;
+			text-align: center;
+			padding: 10px;
+			text-decoration: none;
+			margin-right: 10px; /* Add this line to create a gap between navigation items */
+		}
+		nav a:hover {
+			background-color: #63c0e8;
+			opacity: 0.8;
+		}
+		.image-container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			margin-top: 30px;
+		}
+		figure {
+			margin: 20px;
+			padding: 10px;
+			text-align: center;
+			position: relative;
+			overflow: hidden;
+			width: 200px; /* Adjust the width of the figure to your preference */
+		}
+		img {
+			max-width: 100%; /* Change this line to adjust the image size */
+			height: auto;
+			transition: opacity 0.3s, transform 0.3s;
+		}
+		figcaption {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			padding: 10px;
+			background-color: rgba(0, 0, 0, 0.7);
+			color: #fff;
+			font-size: 16px;
+			opacity: 0;
+			transition: opacity 0.3s;
+		}
+		.play-button {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			opacity: 0;
+			transition: opacity 0.3s;
+		}
+		figure:hover img {
+			opacity: 0.5;
+			transform: scale(1.05);
+		}
+		figure:hover figcaption {
+			opacity: 1;
+		}
+		figure:hover .play-button {
+			opacity: 1;
+		}
+								footer {
+			background-color: #0000;
+			padding: 20px;
+			text-align: center;
+			color: #fff;
+			margin-top: 50px;
+		}
+
+		.footer-links {
+			margin-top: 10px;
+			display: flex;
+			justify-content: center;
+		}
+
+		.footer-links a {
+			color: #fff;
+			text-decoration: none;
+			transition: opacity 0.3s;
+			margin: 10px;
+			font-size: 16px;
+		}
+
+		.footer-links a:hover {
+			opacity: 0.5;
+		}
+
+		.footer-social {
+			margin-top: 20px;
+			display: flex;
+			justify-content: center;
+		}
+
+		.social-icon {
+			width: 30px;
+			height: 30px;
+			transition: transform 0.3s;
+			margin: 5px;
+		}
+
+		.social-icon:hover {
+			transform: scale(1.2);
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="movies.html">Movies</a>
+			<a href="tvshows.html">Tv shows</a>
+			<a href="kids.html">Kids</a>
+			<a href="games.html">Games</a>
+			<a href="aboutus.html">About Us</a>
+			
+		</nav>
+	</header>
+
+	<h1>Welcome to the Game Center</h1>
+
+	<section>
+		<h2>Popular Games</h2>
+		<div class="image-container">
+			<figure>
+				<a href="game1.html">
+					<img src="images/assasinscreed.jpeg" height="385px" width="260px" alt="Game 1">
+					<figcaption>Assasins Creed</figcaption>
+					<div class="play-button">
+						<img src="images/play-button.png" alt="Play Button">
+					</div>
+				</a>
+			</figure>
+			<figure>
+				<a href="game2.html">
+					<img src="images/lastofus.jpeg" height="385px" width="260px" alt="Game 2">
+					<figcaption>Last Of Us</figcaption>
+					<div class="play-button">
+						<img src="images/play-button.png" alt="Play Button">
+					</div>
+				</a>
+			</figure>
+			<figure>
+				<a href="game3.html">
+					<img src="images/fifa2.jpeg" height="385px" width="260px" alt="Game 3">
+					<figcaption>Fifa 22</figcaption>
+					<div class="play-button">
+						<img src="images/play-button.png" alt="Play Button">
+					</div>
+				</a>
+			</figure>
+			<figure>
+				<a href="game4.html">
+					<img src="images/ufc3.jpeg" height="385px" width="260px" alt="Game 4">
+					<figcaption>UFC 3</figcaption>
+					<div class="play-button">
+						<img src="images/play-button.png" alt="Play Button">
+					</div>
+				</a>
+			</figure>
+			<figure>
+				<a href="game4.html">
+					<img src="images/gta5.jpeg" height="385px" width="260px" alt="Game 4">
+					<figcaption>GTA 5</figcaption>
+					<div class="play-button">
+						<img src="images/play-button.png" alt="Play Button">
+					</div>
+				</a>
+			</figure>
+		</div>
+	</section>
+
+	<section>
+		<h2>New Releases</h2>
+		<div class="image-container">
+			<figure>
+				<a href="game5.html">
+					<img src="images/nfsh.jpeg" height="385px" width="260px" alt="Game 5">
+					<figcaption>Need For Speed Heat</figcaption>
+					<div class="play-button">
+						<img src="images/play-button.png" alt="Play Button">
+					</div>
+				</a>
+			</figure>
+			<figure>
+				<a href="game6.html">
+					<img src="images/gt.jpeg" height="385px" width="260px" alt="Game 6">
+					<figcaption>GranTourismo</figcaption>
+					<div class="play-button">
+						<img src="images/play-button.png" alt="Play Button">
+					</div>
+				</a>
+			</figure>
+			<figure>
+				<a href="game7.html">
+					<img src="images/wwe.jpeg" height="385px" width="260px" alt="Game 7">
+					<figcaption>Wwe 2k22</figcaption>
+					<div class="play-button">
+						<img src="images/play-button.png" alt="Play Button">
+					</div>
+				</a>
+			</figure>
+			<figure>
+				<a href="game8.html">
+					<img src="images/cod2.jpeg" height="385px" width="260px" alt="Game 8">
+					<figcaption>Call of Duty</figcaption>
+					<div class="play-button">
+						<img src="images/play-button.png" alt="Play Button">
+					</div>
+				</a>
+			</figure>
+			<figure>
+				<a href="game4.html">
+					<img src="images/nba.jpeg" height="385px" width="260px" alt="Game 4">
+					<figcaption>NBA 2k22</figcaption>
+					<div class="play-button">
+						<img src="images/play-button.png" alt="Play Button">
+					</div>
+				</a>
+			</figure>
+		</div>
+	</section>
+		<footer>
+		<div class="footer-links">
+			<a href="index.html">Home</a>
+			<a href="movies.html">Movies</a>
+			<a href="tvshows.html">TV Shows</a>
+			<a href="kids.html">Kids</a>
+			<a href="games.html">Games</a>
+			<a href="abouteus.html">About Us</a>
+		</div>
+		<div class="footer-social">
+			<a href="#"><img class="social-icon" src="images/twitter.png" alt="Twitter"></a>
+			<a href="#"><img class="social-icon" src="images/instagram2.webp" alt="Instagram"></a>
+			<a href="#"><img class="social-icon" src="images/youtube1.png" alt="YouTube"></a>
+		</div>
+	</footer>
+</body>
+</html>

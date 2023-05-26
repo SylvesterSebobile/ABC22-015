@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Warner Bros</title>
+	<style>
+		body {
+			background: linear-gradient(180deg, #4042b1, #000);
+			color: #fff;
+			font-family: verdana;
+			margin: 0;
+			padding: 0;
+		}
+		h1 {
+			color: #fff;
+			font-size: 28px;
+			font-weight: bold;
+			margin: 50px;
+		}
+		nav {
+			list-style-type: none;
+			margin: 0;
+			overflow: hidden;
+			background-color: #222;
+			display: flex; /* Add this line to make the navigation items horizontally aligned */
+			justify-content: flex-end; /* Add this line to align the items to the right */
+		}
+		nav a {
+			display: block;
+			color: #fff;
+			text-align: center;
+			padding: 10px;
+			text-decoration: none;
+			margin-right: 10px; /* Add this line to create a gap between navigation items */
+		}
+		nav a:hover {
+			background-color: #63c0e8;
+			opacity: 0.8;
+		}
+		.image-container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			margin-top: 30px;
+		}
+		figure {
+			margin: 20px;
+			padding: 10px;
+			text-align: center;
+			position: relative;
+			overflow: hidden;
+			width: 200px; /* Adjust the width of the figure to your preference */
+		}
+		img {
+			max-width: 100%; /* Change this line to adjust the image size */
+			height: auto;
+			transition: opacity 0.3s, transform 0.3s;
+		}
+		figcaption {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			padding: 10px;
+			background-color: rgba(0, 0, 0, 0.7);
+			color: #fff;
+			font-size: 16px;
+			opacity: 0;
+			transition: opacity 0.3s;
+		}
+
+		.play-button {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			opacity: 0;
+			transition: opacity 0.3s;
+		}
+		.play-button img {
+			width: 50px;
+			height: 50px;
+		}
+		figure:hover img {
+			opacity: 0.5;
+			transform: scale(1.05);
+		}
+		figure:hover figcaption {
+			opacity: 1;
+		}
+		figure:hover .play-button {
+			opacity: 1;
+		}
+						footer {
+			background-color: #0000;
+			padding: 20px;
+			text-align: center;
+			color: #fff;
+			margin-top: 50px;
+		}
+
+		.footer-links {
+			margin-top: 10px;
+			display: flex;
+			justify-content: center;
+		}
+
+		.footer-links a {
+			color: #fff;
+			text-decoration: none;
+			transition: opacity 0.3s;
+			margin: 10px;
+			font-size: 16px;
+		}
+
+		.footer-links a:hover {
+			opacity: 0.5;
+		}
+
+		.footer-social {
+			margin-top: 20px;
+			display: flex;
+			justify-content: center;
+		}
+
+		.social-icon {
+			width: 30px;
+			height: 30px;
+			transition: transform 0.3s;
+			margin: 5px;
+		}
+
+		.social-icon:hover {
+			transform: scale(1.2);
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="index.html">Home</a>
+			<a href="Movies.html">Movies</a>
+			<a href="TVShows.html">Tv shows</a>
+			<a href="kids.html">Kids</a>
+			<a href="Games.html">Games</a>
+			<a href="aboutus.html">About Us</a>
+		</nav>
+	</header>
+	<section>
+		<h1>Anime</h1>
+	</section>
+	<div class="image-container">
+		<figure>
+			<a href="https://youtu.be/CaimKeDcudo">
+				<img src="images/enchanto.jpeg" height="385px" width="260px">
+				<figcaption>Enchanto</figcaption>
+				<div class="play-button">
+					<img src="images/play-button.png" alt="Play Button">
+				</div>
+			</a>
+		</figure>
+		<figure>
+			<a href="https://youtu.be/CaimKeDcudo">
+				<img src="images/luca.jpeg" height="385px" width="260px">
+				<figcaption>Luca</figcaption>
+				<div class="play-button">
+					<img src="images/play-button.png" alt="Play Button">
+				</div>
+			</a>
+		</figure>
+		<figure>
+			<a href="https://youtu.be/EPZu5MA2uqI">
+				<img src="images/sing2.jpeg" height="385px" width="260px">
+				<figcaption>Sing 2</figcaption>
+				<div class="play-button">
+					<img src="images/play-button.png" alt="Play Button">
+				</div>
+			</a>
+		</figure>
+		<figure>
+			<a href="https://youtu.be/ZhNu93rGx-o">
+				<img src="images/karma.jpeg" height="385px" width="260px">
+				<figcaption>Karma's World</figcaption>
+				<div class="play-button">
+					<img src="images/play-button.png" alt="Play Button">
+				</div>
+			</a>
+		</figure>
+		<figure>
+			<a href="https://youtu.be/BOe8L69JpVI">
+				<img src="images/vivo.jpeg" height="385px" width="260px">
+				<figcaption>Vivo</figcaption>
+				<div class="play-button">
+					<img src="images/play-button.png" alt="Play Button">
+				</div>
+			</a>
+		</figure>
+	</div>
+	<section>
+		<h1>Animation</h1>
+	</section>
+	<div class="image-container">
+		<figure>
+			<a href="https://youtu.be/SDOdIjgevrk">
+				<img src="images/baki.jpeg" height="385px" width="260px">
+				<figcaption>Baki</figcaption>
+				<div class="play-button">
+					<img src="images/play-button.png" alt="Play Button">
+				</div>
+			</a>
+		</figure>
+		<figure>
+			<a href="https://youtu.be/WYEvM7vpgoA">
+				<img src="images/boruto.jpeg" height="385px" width="260px">
+				<figcaption>Boruto</figcaption>
+				<div class="play-button">
+					<img src="images/play-button.png" alt="Play Button">
+				</div>
+			</a>
+		</figure>
+		<figure>
+			<a href="https://youtu.be/9DhuWapDDrw">
+				<img src="images/demonslayer.jpeg" height="385px" width="260px">
+				<figcaption>Demon Slayer</figcaption>
+				<div class="play-button">
+					<img src="images/play-button.png" alt="Play Button">
+				</div>
+			</a>
+		</figure>
+		<figure>
+			<a href="https://youtu.be/uWIRyU5fuzU">
+				<img src="images/wishdragon.jpeg" height="385px" width="260px">
+				<figcaption>Wish Dragon</figcaption>
+				<div class="play-button">
+					<img src="images/play-button.png" alt="Play Button">
+				</div>
+			</a>
+		</figure>
+		<figure>
+			<a href="https://youtu.be/LKFuXETZUsI">
+				<img src="images/moana.jpg" height="385px" width="260px">
+				<figcaption>Moana</figcaption>
+				<div class="play-button">
+					<img src="images/play-button.png" alt="Play Button">
+				</div>
+			</a>
+		</figure>
+	</div>
+	<footer>
+		<div class="footer-links">
+			<a href="index.html">Home</a>
+			<a href="movies.html">Movies</a>
+			<a href="TVShows.html">TV Shows</a>
+			<a href="kids.html">Kids</a>
+			<a href="games.html">Games</a>
+			<a href="aboutus.html">About Us</a>
+		</div>
+		<div class="footer-social">
+			<a href="#"><img class="social-icon" src="images/twitter.png" alt="Twitter"></a>
+			<a href="#"><img class="social-icon" src="images/instagram2.webp" alt="Instagram"></a>
+			<a href="#"><img class="social-icon" src="images/youtube1.png" alt="YouTube"></a>
+		</div>
+	</footer>
+</body>
+</html>
